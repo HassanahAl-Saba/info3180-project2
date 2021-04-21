@@ -53,10 +53,18 @@ app.component('app-footer', {
 const Home = {
     name: 'Home',
     template: `
-    <div class="jumbotron">
-        <h1>Project 2</h1>
-        <p class="lead">In this lab we will demonstrate VueJS working with Forms and Form Validation from Flask-WTF.</p>
+    <div class="container">
+        <div class = "left">
+            <h2> Buy and Sell Cars Online </h2>
+            <p> United Sales XYZ </p>
+            <button id="home_btn1" @click="$router.push('register')" type="button" class="btn btn-success">Register</button>
+            <button id="home_btn2" @click="$router.push('login')" type="button" class="btn btn-primary">Login</button>
+        </div>
+        <div class = "image">
+            <img src="/static/car.jpeg" alt="car img">
+        </div>
     </div>
+
     `,
     data() {
         return {}
