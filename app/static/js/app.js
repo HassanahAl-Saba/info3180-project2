@@ -56,13 +56,14 @@ const Home = {
     <div class="container">
         <div class = "left">
             <h2> Buy and Sell Cars Online </h2>
-            <p> United Sales XYZ </p>
-            <button id="home_btn1" @click="$router.push('register')" type="button" class="btn btn-success">Register</button>
-            <button id="home_btn2" @click="$router.push('login')" type="button" class="btn btn-primary">Login</button>
+            <p> United Auto Sales provides the fastest, easiest and most user friendly way to buy or sell cars online</p>
+
+            <div class = 'btns'>
+                <button id="reg_btn" @click="$router.push('register')" type="button" class="btn btn-success">Register</button>
+                <button id="login_btn" @click="$router.push('login')" type="button" class="btn btn-primary">Login</button>
+            </div>
         </div>
-        <div class = "image">
-            <img src="/static/car.jpeg" alt="car img">
-        </div>
+        
     </div>
 
     `,
